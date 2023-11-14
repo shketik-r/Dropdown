@@ -1,0 +1,39 @@
+body {
+  width: 600px;
+  margin: 0 auto;
+  margin-top: 100px;
+}
+
+.dropdown {}
+
+.dropdown__panel {
+  max-height: 0;
+  overflow: hidden;
+  transition: all 0.3s;
+}
+
+.dropdown__panel ul {
+  background: gray;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.dropdown__btn {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  background: greenyellow;
+  align-items: center;
+  padding: 5px 20px;
+}
+
+.dropdown__icon {
+  transition: all 0.3s;
+}
+
+.dropdown__icon.active {
+
+  transform: rotate(180deg);
+}
